@@ -1,0 +1,150 @@
+/* orderhtml.css - Styles for Order.html page */
+/* ===== General Page Styling ===== */
+body {
+  background-color: #fbd3d4;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ===== Main Order Card ===== */
+.order-container {
+  background-color: white;
+  width: 320px;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+}
+.background-circle {
+
+  background-color: #ff0000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+/* ===== Top Buttons (Back & Favorite) ===== */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.back-btn, .fav-btn {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* ===== Food Image & Text ===== */
+.food-info h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.food-info p {
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.food-img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ===== Size Buttons ===== */
+.size-selection {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.size-btn {
+  border: none;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  justify-content: center;
+}
+.size-btn.active {
+  background-color: #e53935;
+  color: white;
+}
+
+/* ===== Quantity Section ===== */
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 15px 0;
+}
+
+.qty-btn {
+  background-color: #f48b8b;
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.qty-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== Price and Cart Button ===== */
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.price-info {
+  text-align: left;
+}
+
+.price-label {
+  font-size: 13px;
+  color: #555;
+}
+
+.price-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cart-btn {
+  background-color: #e53935;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cart-btn:hover {
+  background-color: #c62828;
+}

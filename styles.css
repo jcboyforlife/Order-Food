@@ -1,0 +1,124 @@
+/* home.css
+   Styles for the Home page: header, categories, cards, bottom nav
+*/
+
+/* Basic reset & font */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f8d6d8; /* light pink like my design */
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.header {
+  max-width: 420px;
+  margin: 18px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger { background: transparent; border: none; font-size: 18px; }
+.location { font-size: 14px; color: #c62828; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; }
+
+/* Hero */
+.hero {
+  max-width: 420px;
+  margin: 0 auto 10px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.hero h1 { font-size: 28px; margin-bottom: 6px; }
+.sub { color: #607d8b; margin-bottom: 12px; }
+
+/* Search input */
+.search input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+/* Categories row */
+.categories {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  justify-content: space-between;
+}
+.categories :hover{
+  background-color: #e53935;
+  box-shadow: 0 4px 12px rgba(219, 17, 17, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.cat {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.cat img { display: block; margin: 0 auto 8px; }
+.cat.active { background: #e53935; color: #fff; }
+
+/* Main list of popular items */
+.main {
+  max-width: 420px;
+  margin: 18px auto;
+}
+.food-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.food-card img:hover {
+  background-color: #e53935;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+.food-card img { width: 100%; border-radius: 10px; display:block; }
+.card-body { padding: 10px; }
+.card-body h3 { font-size: 18px; margin-bottom: 6px; }
+.desc { color: #7f8c8d; font-size: 14px; margin-bottom: 10px; }
+
+/* meta: price + order button */
+.meta { display:flex; align-items:center; justify-content:space-between; }
+.price { color: #e53935; font-weight:700; }
+.btn {
+  background:#e53935;
+  color:#fff;
+  padding:8px 12px;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+/* comments preview (static) */
+.comments-preview { padding: 10px; border-top: 1px dashed #eee; font-size: 13px; color:#444; }
+.comment { margin-bottom:6px; }
+
+/* bottom nav */
+.nav {
+  max-width: 420px;
+  margin: 18px auto 40px;
+  display:flex;
+  justify-content:space-around;
+  background:transparent;
+}
+.nav a { color:#555; text-decoration:none; font-size:14px; }
+
+/* small screen tweaks */
+@media (max-width:420px){
+  .hero, .main, .header { margin-left: 12px; margin-right: 12px; }
+}
+@media (max-width:360px){
+  .categories { flex-direction: column; }
+  .cat { margin-bottom: 10px; }
+}

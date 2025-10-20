@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FoodApp — Home</title>
+  <!-- Link to the page-specific CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header area with location and avatar -->
+  <header class="header">
+    <button class="hamburger" aria-label="menu">☰</button>
+    <div class="location">📍 Chicago, IL</div>
+    <img class="avatar" src="pic.JPG" alt="avatar" />
+  </header>
+
+  <!-- Hero text -->
+  <section class="hero">
+    <h1>Hey!</h1>
+    <p class="sub">Let's get your order</p>
+
+    <!-- Search box -->
+    <div class="search">
+      <input type="text" placeholder="Search our delicious burgers" />
+    </div>
+
+    <!-- Category cards -->
+    <div class="categories">
+      <div class="cat">
+        <img src="buger 1.png" alt="burger" height="30px" />
+        <span>Burgers</span>
+      </div>
+      <div class="cat">
+        <img src="pizza.png" alt="pizza" height="30px" />
+        <span>Pizza</span>
+      </div>
+      <div class="cat">
+        <img src="cake.png" alt="cakes" height="30px" />
+        <span>Cakes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular list — each card corresponds to an item and has its own "view" button -->
+  <main class="main">
+    <h2>Popular</h2>
+
+    <article class="food-card">
+      <!-- image of dish -->
+      <img src="buger 3.png" alt="Chipotle Cheesy Chicken" />
+      <div class="card-body">
+        <h3>Chipotle Cheesy Chicken</h3>
+        <p class="desc">Chicken Burger</p>
+        <div class="meta">
+          <div class="price">$20.95</div>
+          <!-- "Order" is a link to the Order page (order.html) -->
+          <a class="btn" href="order.html">Order</a>
+        </div>
+      </div>
+     
+  </main>
+
+  <footer class="nav">
+    <!-- simple bottom navigation (links to pages) -->
+    <a href="home.html">Home</a>
+    <a href="order.html">Order</a>
+    <a href="cart.html">Cart</a>
+    <a href="Rate.html">Rate</a>
+  </footer>
+</body>
+</html>
